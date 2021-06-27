@@ -1,0 +1,298 @@
+<html>
+   
+<head>
+    <title>Fila de Vacinação</title>
+    <link rel="icon" href="https://static.vecteezy.com/ti/vetor-gratis/p1/537055-mao-segurando-o-de-simbolo-medico-icone-conceito-de-saude-vetor.jpg">
+</head>
+
+
+<!-- CSS -->
+<style>
+
+    html{
+    height: 100%;
+    }
+    body{
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+          margin: 0;
+          padding: 0;
+          height: 100%;
+    }
+    table{
+    color: #195e44;
+     border: 1px solid #606060;
+     display: flex;
+     background-color: rgb(255, 255, 255);
+     width: 100% auto;
+     margin-bottom : .5em;
+     table-layout: fixed;
+     text-align: center; 
+     border-radius: 20px;
+     box-sizing: border-box;
+    
+    }
+    h1{
+	font-family : cursive;
+    width: 400px;
+    height: 60px;
+	font-size : 30px;
+	font-weight : xx-bold;
+	color : rgb(255, 255, 255);
+    left : 500px;
+    position: relative;
+    }
+    .oi{
+        font-family: fantasy , copperlate;
+        size: 20px;
+        padding-left: 500px ;
+        font-size: 25;
+    }
+
+    td, th {
+        padding: .7em;
+        margin: 0;
+        text-align: center;
+        vertical-align: middle;
+    }
+    tr{
+        height: 50px;
+    }
+    td{
+    font-weight:bold;
+    }
+    #centralizar{
+        position: relative;
+        top: 5%;
+        left: 40%;
+    }
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Add a black background color to the top navigation */
+    .topnav {
+        background-color: rgb(0, 0, 0);
+        overflow: hidden;
+        height: 70px;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    /* Change the color of links on hover */
+    /* Add a color to the active/current link */
+
+    .d-inline-block{
+        width: 40px;
+    }
+    details {
+        width: 70%;
+        margin: 10 auto ;
+        background: #333;
+        margin-bottom: .5rem;
+        box-shadow: 0 .1rem 1rem -.5rem rgba(0,0,0,.4);
+        border-radius: 5px;
+        overflow: hidden;
+}
+
+summary {
+    font-family: cursive;
+    width: auto;
+    height: auto;
+  padding: 1rem;
+  display: block;
+  background: #333;
+  padding-left: 2.2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+summary:before {
+  content: '';
+  border-width: .4rem;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+  position: absolute;
+  top: 1.3rem;
+  left: 1rem;
+  transform: rotate(0);
+  transform-origin: .2rem 50%;
+  transition: .25s transform ease;
+}
+
+/* THE MAGIC 🧙‍♀️ */
+details[open] > summary:before {
+  transform: rotate(90deg);
+}
+
+
+details summary::-webkit-details-marker {
+  display:none;
+}
+
+details > ul {
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+.sobre{
+    color: white;
+}
+.sintoma{
+    color: white;
+}
+.risco{
+    color: white;
+}
+.prevencao{
+    color: white;
+}
+.button {
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+.vacina{
+    height: auto;
+    width: 600px;
+    position: relative;
+    left: 350px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+
+</style>
+
+
+
+
+
+<!---HTML---->
+<body background= "https://media.gettyimages.com/videos/shining-particles-loop-side-glow-green-video-id155914049?s=640x640">
+    
+    <div class="topnav">
+        <a class="active">
+            <ul class="oi">Bem vindo a Fila de Vacinação</ul>
+        </a>
+    </div>
+    <details>
+        <summary style="color: white;">Sobre Covid-19</summary>
+        <ul class="sobre">
+            COVID-19 é a doença causada por uma nova espécie de coronavírus, denominado SARS-CoV-2. Ele pertence a uma família de vírus que já 
+            circulava no Brasil antes da pandemia e era responsável por grande parte dos resfriados comuns. Outras espécies foram responsáveis 
+            por doenças mais graves, como a Síndrome Aguda Respiratória Severa (SARS-CoV-1) e a Síndrome Respiratória do 
+            Oriente Médio (MERS-CoV) que não tiveram casos no Brasil.
+        </ul>
+      </details>
+      <details>
+        <summary style="color: white">Sintomas</summary>
+        <ul class="sintoma">
+          <li>Febre ou calafrios</li>
+          <li>Tosse</li>
+          <li>Falta de ar</li>
+          <li>Fadiga</li>
+          <li>Dores de garganta </li>
+          <li>Dores de cabeça</li>
+          <li>Coriza</li>
+          <li>Náuseas</li>
+          <li>Anosmia(ausência de olfato)</li>
+        </ul>
+      </details>
+      <details>
+        <summary style="color: white;">Grupo de Risco</summary>
+        <ul class="risco">
+          <li>Idade acima de 60 anos</li>
+          <li>Câncer</li>
+          <li>Insuficiência renal crônica</li>
+          <li>Bronquite crônica e enfisema pulmonar</li>
+          <li>Cardiopatias</li>
+          <li>Imunodepressão</li>
+          <li>Gestação</li>
+          <li>Anemia falciforme</li>
+          <li>Tabagismo</li>
+          <li>Diabtes Mellitus</li>
+        </ul>
+      </details>
+      <details>
+        <summary style="color: white;">Prevenção</summary>
+        <ul class="prevencao">
+          <li>Lave suas mãos com frequência. Use sabão e água ou álcool em gel.</li>
+          <li>Mantenha uma distância segura de pessoas que estiverem tossindo ou espirrando.</li>
+          <li>Use máscara quando não for possível manter o distanciamento físico.</li>
+          <li>Não toque nos olhos, no nariz ou na boca.</li>
+          <li>Cubra seu nariz e boca com o braço dobrado ou um lenço ao tossir ou expirar.</li>
+          <li>Fique em casa se você se sentir indisposto.</li>
+          <li>Procure atendimento médico se tiver febre, tosse e dificuldade para respirar.</li>
+        </ul>
+      </details>
+      </details>
+      <div>
+        <img class="vacina" src="https://imagens.ebc.com.br/HR8H6vjn0kZODU4dqgFs3ISI_cA=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2020-09-27t000000z_1590795794_mt1imgost000of8jy0_rtrmadp_3_imago-images_0.jpg?itok=Iwv6ucZ2">
+    </div>
+    <ul><h1 width="220" height="80" >Fila de Vacinação</h1></ul>
+    
+<table class = "center" width=600px height=auto>    
+    <table class = "center" width=600px height=auto>
+        <th colspan="1"><b>Pessoas profissionais da área da saúde com idade igual a 60 anos ou mais<b></th>
+                <ul>{% for row in profissionaisSaudeIgualMaior60: %}
+                        <tr><td>{{ row.nome }}</td><td>{{ row.dataInscricao}}</td></tr></ul>
+                {% endfor %}
+    </table>
+    <table class = "center" width=600px height=auto>
+        <tr>
+            <th colspan="1"><b>Pessoas profissionais da área da saúde com menos de 60 anos<b></th>
+                    <ul>{% for row in profissionaisSaudeMenor60: %}
+                        <tr><td>{{ row.nome }}</td><td>{{ row.dataInscricao }}</td></tr></ul>
+                    {% endfor %}
+        </tr>
+    </table>
+    <table class = "center" width=600px height=auto>
+        <tr>
+            <th colspan="1"><b>Pessoas que não são da área da saúde com idade igual a 60 anos ou mais<b></th>
+                    <ul>{% for row in naoProfissionaisIgualMaior60: %}
+                     <tr><td>{{ row.nome }}</td><td>{{ row.dataInscricao }}</td></tr></ul>
+                    {% endfor %}
+        </tr>
+    </table>
+    <table class = "center" width=600px height=auto>
+        <tr>
+            <th colspan="1"><b>Pessoas não profissionais da área da saúde com menos de 60</b></th>
+                    <ul>{% for row in naoProfissionaisSaudeMenor60: %}</ul>
+                     <ul><tr><td>{{ row.nome }}</td><td>{{ row.dataInscricao }}</td></tr></ul>
+                    {% endfor %}
+        </tr>
+    </table>
+        <div id="centralizar">
+            <a name = "cent" href="{{ url_for('registrar') }}"><button type="button" class="button">Registrar</button></a>
+            <a name = "cent" href="{{ url_for('login') }}"><button type="button" class="button">Registrar Vacinação</button></a>
+        </div>
+    </table>
+</table>
+
+
+
+
+</body>
+
+</html>

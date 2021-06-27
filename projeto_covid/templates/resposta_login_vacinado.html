@@ -1,0 +1,111 @@
+<!----CSS---->
+
+<style>
+body {
+
+  background: url("https://media.gettyimages.com/videos/abstract-blocks-background-video-id1191991111?s=640x640");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  align-items: center;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  font-size: 20px;
+}
+
+.form {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #1a3521;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 350px;
+  padding: 50px;
+  width: 400px;
+}
+
+.ask{
+    position: 40%;
+}
+
+.main{
+    height: 40px;
+    width: 100px;
+    position: 60%;
+    size: -1;
+}
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+.submit {
+  background-color: rgb(0, 221, 55);
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  outline: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.submit:active {
+  background-color: rgb(22, 187, 0);
+}
+.submit {
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  font-size: 16px;
+}
+
+.submit:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+</style>
+
+
+
+
+<!--HTML-->
+<link rel="icon" href="https://static.vecteezy.com/ti/vetor-gratis/p1/537055-mao-segurando-o-de-simbolo-medico-icone-conceito-de-saude-vetor.jpg">
+<title>Primeria Dose</title>
+<body background= "https://saude.abril.com.br/wp-content/uploads/2020/10/vacinas-pra-corona.png">
+    <div class="form">
+    <form class = "vacinado" action="/gravarVacinado/" method="POST">
+        <input type="hidden" name="login" value="{{ login }}">
+            <p class = "ask" style="color: white;">Já foi vacinado na primeira dose?</p>
+                <ul><select class= "main" name="vacinado"></ul>
+                    <option value="S">Sim</option>
+                    <option value="N">Não</option>
+                </select>
+            </p>
+            <p><input class= "submit" type="submit" value="Enviar"/></p>
+    </form>
+    </div>
+</body>

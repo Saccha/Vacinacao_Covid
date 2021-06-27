@@ -1,0 +1,126 @@
+<title>Registro</title>
+<link rel="icon" href="https://static.vecteezy.com/ti/vetor-gratis/p1/537055-mao-segurando-o-de-simbolo-medico-icone-conceito-de-saude-vetor.jpg">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<form action="/gravar/" method="POST">
+<div class="container" style="color: white;">
+    <h1>Cadastro</h1>
+    <p style="color: red;"><b>Complete todos os campos</p></b>
+        <p for="name"><b>Nome </b></p>
+            <input placeholder="Nome Completo"  type="text" name="nome" id="name"/>
+        <p for="cpf"><b>CPF</p></b>
+            <input placeholder = "Ex.: 000.000.000-00" type="text" name="cpf" id="cpf" />
+        <p for= "data"><b>Data de Nascimento</p></b>
+            <input placeholder="Ex.: dd/mm/aaaa"  type="text" name="nascimento" id="datepicker"/>
+            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+              <script>
+                $( function() {
+                  $( "#datepicker" ).datepicker();
+                } );
+              </script>
+        <p>É profissional da Saúde?
+            <select name="profissionalSaude">
+                <option value="S">Sim</option>
+                <option value="N">Não</option>
+            </select>
+        </p>
+
+    <p>Login <input placeholder= "Nome do Usuário"  type="text" name="login" /></p>
+    <p>Senha <input placeholder ="Senha" type="password" name="senha1" /></p>
+    <p>Redigitar Senha <input placeholder="Redigitar senha"  type="password" name="senha2" /></p>
+    <p><input class="submit"  type="submit" value="Enviar" /></p>
+
+</div>
+
+</form>
+
+
+
+<!--CSS-->
+<style>
+    body{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-image: url(https://image.freepik.com/free-vector/luxury-green-background-with-overlap-layer_95742-186.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    * {
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    }
+    .container{
+        background-color: rgb(86, 110, 79);
+        width: 500px;
+        margin: 10 auto ;
+        
+    
+    }
+
+/* Add padding to containers */
+.container {
+  background-color: rgb(86, 110, 79);
+  width: 500px;
+  margin: 10 auto ;
+  padding: 20px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+.submit {
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  font-size: 16px;
+}
+
+.submit:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+</style>
